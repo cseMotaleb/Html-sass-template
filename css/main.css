@@ -1,0 +1,595 @@
+body {
+  overflow-x: hidden;
+  position: relative; }
+
+* {
+  box-sizing: border-box; }
+
+a:hover {
+  text-decoration: none; }
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #999999;
+  font-weight: 300; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #999999;
+  font-weight: 300; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #999999;
+  font-weight: 300; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.13; }
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.section-padding {
+  padding: 60px 0px 30px 0px; }
+
+.col-md-4, .col-md-5, .col-md-7, .col-md-6 {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0; }
+  #header .topbar {
+    padding: 0px 8px; }
+    #header .topbar h4 {
+      color: #e2d3c6;
+      font-family: "Montserrat";
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0px;
+      padding-top: 31px; }
+      #header .topbar h4 span {
+        padding-right: 25px; }
+  #header .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+    #header .navbar .navbar-brand img {
+      margin-top: -15px;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out; }
+    #header .navbar.nav-item {
+      margin-left: 0.4em; }
+    a #header .navbar.nav-link {
+      font-size: 10px; }
+    #header .navbar.nav-item-divider {
+      display: block; }
+    #header .navbar.nav-link > span {
+      border-left: 3px solid #fff; }
+    #header .navbar .navbar-nav .nav-link {
+      color: #ffffff;
+      font-family: "Bebas Neue";
+      text-align: left;
+      font-size: 24px;
+      font-weight: 400;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out; }
+      #header .navbar .navbar-nav .nav-link:hover {
+        color: #e2d3c6 !important; }
+      #header .navbar .navbar-nav .nav-link.active {
+        color: #e2d3c6 !important; }
+  #header .navbar-expand-lg {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    position: absolute;
+    margin-top: 33px; }
+  #header .navbar-collapse {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    margin-top: -191px; }
+  #header .navbar-toggler {
+    width: 1.8em;
+    cursor: pointer;
+    position: relative;
+    right: 0;
+    top: 0;
+    height: 2em;
+    z-index: 6;
+    border-color: transparent !important;
+    color: unset !important; }
+    #header .navbar-toggler span {
+      display: block;
+      height: .12em;
+      width: 100%;
+      left: 0;
+      background-color: #fff;
+      position: absolute;
+      border-radius: 100px;
+      -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+      transform-origin: center;
+      -webkit-transition: all .3s;
+      transition: all .3s; }
+    #header .navbar-toggler span:nth-child(1) {
+      -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+      top: 20px; }
+    #header .navbar-toggler span:nth-child(2) {
+      top: 20px;
+      background-color: transparent; }
+    #header .navbar-toggler span:nth-child(3) {
+      -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+      transform: rotate(135deg);
+      top: 20px; }
+    #header .navbar-toggler.collapsed {
+      position: relative; }
+      #header .navbar-toggler.collapsed span:nth-child(1) {
+        top: 12px;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg); }
+      #header .navbar-toggler.collapsed span:nth-child(2) {
+        top: 20px; }
+      #header .navbar-toggler.collapsed span:nth-child(3) {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        top: 28px; }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background: #000;
+  height: 113px;
+  opacity: 0.7;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out; }
+  .fixed .navbar-brand {
+    width: 108px;
+    margin-top: -28px !important; }
+  .fixed .navbar-nav {
+    margin-top: 182px; }
+
+#banner-wrapper {
+  background: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 752px;
+  position: relative;
+  z-index: -5;
+  padding: 60px 0px; }
+  #banner-wrapper .banner {
+    border-bottom: 2px solid #E2D3C6;
+    position: relative; }
+    #banner-wrapper .banner:after {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-top: 0px solid #E2D3C6;
+      border-left: 0px solid #E2D3C6;
+      border-bottom: 2px solid #E2D3C6;
+      border-right: 2px solid #E2D3C6;
+      top: 100%;
+      left: 25%;
+      margin-left: -25px;
+      content: "";
+      transform: rotate(45deg);
+      margin-top: -7px;
+      background: #21201C; }
+    #banner-wrapper .banner .banner-text {
+      margin: 310px 0px 30px 0px; }
+      #banner-wrapper .banner .banner-text h2 {
+        text-transform: capitalize;
+        color: #ffffff;
+        font-size: 72px;
+        font-weight: 400;
+        z-index: 11;
+        font-family: "Station No .4 W 00- Four"; }
+      #banner-wrapper .banner .banner-text .sub-title {
+        margin-bottom: 26px; }
+        #banner-wrapper .banner .banner-text .sub-title h4 {
+          font-family: "Montserrat";
+          font-size: 18px;
+          font-weight: 700;
+          color: #e2d3c6;
+          margin: 3px 0px; }
+        #banner-wrapper .banner .banner-text .sub-title p {
+          color: #fff;
+          font-size: 16px;
+          line-height: 22px;
+          line-height: 1.375;
+          font-family: "Montserrat";
+          text-align: justify-all; }
+
+#banner-wrapper {
+  background: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 752px;
+  position: relative;
+  z-index: -5;
+  padding: 60px 0px; }
+  #banner-wrapper .banner {
+    border-bottom: 2px solid #E2D3C6;
+    position: relative; }
+    #banner-wrapper .banner:after {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-top: 0px solid #E2D3C6;
+      border-left: 0px solid #E2D3C6;
+      border-bottom: 2px solid #E2D3C6;
+      border-right: 2px solid #E2D3C6;
+      top: 100%;
+      left: 25%;
+      margin-left: -25px;
+      content: "";
+      transform: rotate(45deg);
+      margin-top: -7px;
+      background: #21201C; }
+    #banner-wrapper .banner .banner-text {
+      margin: 310px 0px 30px 0px; }
+      #banner-wrapper .banner .banner-text h2 {
+        text-transform: capitalize;
+        color: #ffffff;
+        font-size: 72px;
+        font-weight: 400;
+        z-index: 11;
+        font-family: "Station No .4 W 00- Four"; }
+      #banner-wrapper .banner .banner-text .sub-title {
+        margin-bottom: 26px; }
+        #banner-wrapper .banner .banner-text .sub-title h4 {
+          font-family: "Montserrat";
+          font-size: 18px;
+          font-weight: 700;
+          color: #e2d3c6;
+          margin: 3px 0px; }
+        #banner-wrapper .banner .banner-text .sub-title p {
+          color: #fff;
+          font-size: 16px;
+          line-height: 22px;
+          line-height: 1.375;
+          font-family: "Montserrat";
+          text-align: justify-all; }
+
+/*=========================
+  Pagemenu-Wrapper CSS
+===========================*/
+#pagemenu-wrapper {
+  background: #21201C;
+  padding: 46px 0px 60px 0px; }
+  #pagemenu-wrapper .single-menu {
+    background: url(../images/bg-menu.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    padding: 35px 10px 31px 10px;
+    min-height: 341px;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+    #pagemenu-wrapper .single-menu:hover {
+      margin-top: -5px;
+      -webkit-box-shadow: 9px 9px 0px -9px #787278;
+      -moz-box-shadow: 9px 9px 0px -9px #787278;
+      box-shadow: 9px 9px 0px -9px #787278; }
+    #pagemenu-wrapper .single-menu .menu h2 {
+      text-align: right;
+      right: 5px;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 84px;
+      text-transform: uppercase;
+      color: #212322;
+      font-family: "Station No .4 W 00- Four";
+      letter-spacing: 1.23px;
+      transition: all 3s; }
+    #pagemenu-wrapper .single-menu .menu img {
+      height: 193px;
+      margin-bottom: 25px;
+      transition: all 3s; }
+    #pagemenu-wrapper .single-menu .menu ::after {
+      content: "";
+      position: absolute;
+      border: 1px solid #201f1f;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      transition: all 3s; }
+
+/*=========================
+  Gallery-Wrapper CSS
+===========================*/
+#gallery-wrapper {
+  background: url(../images/content-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding: 53px 0px 10px 0px;
+  overflow: hidden; }
+  #gallery-wrapper .gallery-box {
+    border-bottom: 2px solid #000;
+    position: relative;
+    padding: 5px 0px; }
+    #gallery-wrapper .gallery-box:after {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-top: 0px solid #000;
+      border-left: 0px solid #000;
+      border-bottom: 2px solid #000;
+      border-right: 2px solid #000;
+      top: 100%;
+      left: 75%;
+      margin-left: -25px;
+      content: "";
+      transform: rotate(45deg);
+      margin-top: -7px;
+      background: #E2D3C6; }
+  #gallery-wrapper .gallery {
+    margin-bottom: 20px;
+    font-weight: 400;
+    overflow: hidden; }
+    #gallery-wrapper .gallery img {
+      -webkit-transform: scale(1.4);
+      -moz-transform: scale(1.4);
+      -o-transform: scale(1.4);
+      transform: scale(1.4);
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out; }
+    #gallery-wrapper .gallery:hover img {
+      -webkit-transform: rotate(0) scale(1);
+      transform: rotate(0) scale(1); }
+  #gallery-wrapper .gallery-big {
+    height: 340px; }
+  #gallery-wrapper img {
+    height: 100%; }
+  #gallery-wrapper h2 {
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 84px;
+    text-transform: uppercase;
+    color: #212322;
+    font-family: "Station No .4 W 00- Four";
+    letter-spacing: 1.23px;
+    text-align: left; }
+  #gallery-wrapper h2.gallery-text-right {
+    text-align: right !important; }
+
+/*=========================
+  Feature Wrapper CSS
+===========================*/
+#feature-wrapper {
+  background: url(../images/content-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden; }
+  #feature-wrapper .single-feature {
+    background: url(../images/se.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 320px;
+    padding: 38px 0px 21px 0px;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+    #feature-wrapper .single-feature img {
+      margin-bottom: 30px; }
+    #feature-wrapper .single-feature:hover {
+      margin-top: -5px;
+      box-shadow: 0px 30px 50px 0 rgba(105, 0, 255, 0.1); }
+    #feature-wrapper .single-feature .feature ::after {
+      content: "";
+      position: absolute;
+      border: 1px solid #E2D3C6;
+      -moz-border: 1px solid #E2D3C6;
+      -webkit-border: 1px solid #E2D3C6;
+      -o-border: 1px solid #E2D3C6;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px; }
+    #feature-wrapper .single-feature h2 {
+      font-size: 37px;
+      color: #e2d3c6;
+      font-family: "Station No .4 W 00- Four";
+      text-transform: uppercase;
+      line-height: 1.033;
+      font-weight: 400; }
+  #feature-wrapper .nd-child {
+    padding: 50px 0px 21px 0px; }
+  #feature-wrapper .last-child {
+    padding: 75px 0px 21px 0px; }
+  #feature-wrapper .child-last img {
+    margin-bottom: 75px; }
+
+/*=========================
+  Ticket Wrapper CSS
+===========================*/
+#ticket-wraper {
+  background: #21201C;
+  padding: 60px 0px 38px 0px; }
+  #ticket-wraper .ticket {
+    background: url(../images/bg-ticket.png);
+    padding: 48px 29px 48px 29px;
+    position: relative; }
+    #ticket-wraper .ticket::before {
+      content: "";
+      position: absolute;
+      border: 1px solid #000;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px; }
+    #ticket-wraper .ticket .ticket-title h2 {
+      font-size: 60px;
+      font-family: "Station No .4 W 00- Four";
+      color: #212322;
+      line-height: 1.033;
+      font-weight: 400; }
+    #ticket-wraper .ticket .ticket-title p {
+      margin-bottom: 30px; }
+    #ticket-wraper .ticket .ticket-title a {
+      font-size: 16px;
+      font-family: "Montserrat";
+      color: #212322;
+      font-weight: bold;
+      border: 3px solid #21201c;
+      padding: 18px 23px;
+      position: relative;
+      text-transform: uppercase;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out; }
+      #ticket-wraper .ticket .ticket-title a::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid #000;
+        margin: 2px; }
+      #ticket-wraper .ticket .ticket-title a:hover {
+        background: #ffffff;
+        color: #201f1f; }
+
+#footer-wrapper {
+  background: #21201C;
+  position: relative;
+  overflow: hidden; }
+  #footer-wrapper .footer {
+    border-bottom: 2px solid #E2D3C6;
+    position: relative;
+    padding-bottom: 50px; }
+    #footer-wrapper .footer:after {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-top: 0px solid #E2D3C6;
+      border-left: 0px solid #E2D3C6;
+      border-bottom: 2px solid #E2D3C6;
+      border-right: 2px solid #E2D3C6;
+      top: 100%;
+      left: 25%;
+      margin-left: -25px;
+      content: "";
+      transform: rotate(-133deg);
+      margin-top: -7px;
+      background: #21201C; }
+  #footer-wrapper .single-widget ul.footer-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: -11px; }
+  #footer-wrapper .single-widget li a {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 44px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    line-height: 2.444;
+    cursor: pointer;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+    #footer-wrapper .single-widget li a:hover {
+      color: #e2d3c6; }
+  #footer-wrapper .single-widget h2 {
+    font-size: 28px;
+    font-family: "Station No .4 W 00- Four";
+    color: #e2d3c6;
+    line-height: 2;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px; }
+  #footer-wrapper .single-widget h3 {
+    font-size: 15px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    letter-spacing: 0.24px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  #footer-wrapper .single-widget p {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #e2d3c6; }
+  #footer-wrapper .single-widget a {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #e2d3c6; }
+  #footer-wrapper .single-widget .footer-logo {
+    margin-top: 52px; }
+    #footer-wrapper .single-widget .footer-logo img {
+      width: 118px;
+      height: 119px; }
+  #footer-wrapper .bottom-footer {
+    padding: 30px 0px 36px 0px; }
+    #footer-wrapper .bottom-footer .copy-right p {
+      font-size: 12px;
+      font-family: "Montserrat";
+      color: #ffffff; }
+    #footer-wrapper .bottom-footer .copy-right a {
+      font-size: 12px;
+      font-family: "Montserrat";
+      color: #ffffff; }
+  #footer-wrapper .social {
+    margin-top: -3px; }
+    #footer-wrapper .social li {
+      display: inline-block;
+      padding-right: 15px; }
+      #footer-wrapper .social li:last-child {
+        padding-right: 0px; }
+    #footer-wrapper .social a {
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      color: #fff; }
+      #footer-wrapper .social a:hover {
+        color: #e2d3c6; }
+
+/*# sourceMappingURL=main.css.map */

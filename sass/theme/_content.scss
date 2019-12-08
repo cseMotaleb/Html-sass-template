@@ -1,0 +1,294 @@
+/*=========================
+  Pagemenu-Wrapper CSS
+===========================*/
+#pagemenu-wrapper{
+	background: $bg-color;
+	padding: 46px 0px 60px 0px;
+
+	.single-menu{
+		background: url(../images/bg-menu.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		overflow: hidden;
+		position: relative;
+		padding: 35px 10px 31px 10px;
+		min-height: 341px;
+		-moz-transition: .5s ease-in-out;
+		-o-transition: .5s ease-in-out;
+		transition: .5s ease-in-out;
+
+		&:hover{
+  			margin-top: -5px;
+			-webkit-box-shadow: 9px 9px 0px -9px rgba(120,114,120,1);
+			-moz-box-shadow: 9px 9px 0px -9px rgba(120,114,120,1);
+			box-shadow: 9px 9px 0px -9px rgba(120,114,120,1);
+		}
+	
+	.menu{
+		h2{
+			text-align: right;
+			right: 5px;
+			font-size: 50px;
+			font-weight: 400;
+			line-height: 84px;
+			text-transform: uppercase;
+			color: $primary-color2;
+			font-family: $primary-font;
+			letter-spacing: 1.23px;
+			transition: all 3s;
+		}	
+			img{
+				height: 193px;
+				margin-bottom: 25px;
+				transition: all 3s;
+
+			}
+
+			::after{
+				content: "";
+				position: absolute;
+				border: 1px solid #201f1f;
+				top: 5px;
+				left: 5px;
+				right: 5px;
+				bottom: 5px;
+				transition: all 3s;
+			}
+
+		}	
+    }
+}
+
+/*=========================
+  Gallery-Wrapper CSS
+===========================*/
+#gallery-wrapper{
+	background: url(../images/content-bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	padding: 53px 0px 10px 0px;
+	overflow: hidden;
+	
+	.gallery-box{
+		border-bottom: 2px solid #000;
+		position: relative;
+		padding: 5px 0px;
+
+		&:after{
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			border-top: 0px solid #000;
+			border-left: 0px solid #000;
+			border-bottom: 2px solid #000;
+			border-right: 2px solid #000;
+			top: 100%;
+			left: 75%;
+			margin-left:-25px;
+			content: "";
+			transform: rotate(45deg);
+			margin-top: -7px;
+			background: #E2D3C6;
+			}
+		}
+		.gallery{
+			margin-bottom: 20px;
+			font-weight: 400;
+			overflow: hidden;
+
+			img{
+				-webkit-transform: scale(1.4);
+				-moz-transform: scale(1.4);
+				-o-transform: scale(1.4);
+				transform: scale(1.4);
+				-webkit-transition: .5s ease-in-out;
+				-moz-transition: .5s ease-in-out;
+				-o-transition: .5s ease-in-out;
+				transition: .5s ease-in-out;	
+			}
+
+			&:hover img{
+				-webkit-transform: rotate(0) scale(1);
+				transform: rotate(0) scale(1);
+				
+			}
+		}
+		.gallery-big{
+			height: 340px
+		}
+		img{
+			height: 100%
+		}
+			.gallery-content{	
+			}
+
+			h2 {
+				font-size: 55px;
+				font-weight: 400;
+				line-height: 84px;
+				text-transform: uppercase;
+				color: $primary-color2;
+				font-family: $primary-font;
+				letter-spacing: 1.23px;
+				text-align: left;
+			}
+
+			h2.gallery-text-right{
+				text-align: right !important
+			}		
+	}
+
+/*=========================
+  Feature Wrapper CSS
+===========================*/
+
+#feature-wrapper{
+	background: url(../images/content-bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+
+	.single-feature{
+		background: url(../images/se.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		position: relative;
+		height: 320px;
+		padding: 38px 0px 21px 0px;
+		-moz-transition: .5s ease-in-out;
+		-o-transition: .5s ease-in-out;
+		transition: .5s ease-in-out;
+
+		img{
+			margin-bottom: 30px;
+		}
+		
+
+		&:hover{
+  			margin-top: -5px;
+			box-shadow: 0px 30px 50px 0 rgba(105, 0, 255, 0.1);
+		}
+			.feature{
+				::after{
+					content: "";
+					position: absolute;
+					border: 1px solid #E2D3C6;
+					-moz-border: 1px solid #E2D3C6;
+					-webkit-border: 1px solid #E2D3C6;
+					-o-border: 1px solid #E2D3C6;
+					top: 5px;
+					left: 5px;
+					right: 5px;
+					bottom: 5px;
+				}
+
+			}
+				h2{
+					font-size: 37px;
+					color: $primary-color;
+					font-family:$primary-font;
+					text-transform: uppercase;
+					line-height: 1.033;
+					font-weight: 400; 
+				}
+		}
+			.nd-child{
+				padding: 50px 0px 21px 0px;
+			}
+
+			.last-child{
+				padding: 75px 0px 21px 0px;
+			}
+			.child-last img{
+				margin-bottom: 75px;
+			}	  
+	}
+
+/*=========================
+  Ticket Wrapper CSS
+===========================*/
+
+#ticket-wraper{
+	background: #21201C;
+	padding: 60px 0px 38px 0px;
+
+	.ticket{
+		background: url(../images/bg-ticket.png);
+		padding: 48px 29px 48px 29px;
+		position: relative;
+
+	.ticket-border{
+		
+		}
+			&::before{
+				content: "";
+				position: absolute;
+				border: 1px solid #000;
+				top: 5px;
+				left: 5px;
+				right: 5px;
+				bottom: 5px;
+			}
+			.ticket-title {
+
+				h2{
+ 					font-size: 60px;
+ 					font-family:$primary-font;
+				    color: $primary-color2;
+				    line-height: 1.033;
+				    font-weight: 400;
+				}
+
+				p{
+					margin-bottom: 30px;
+				}
+
+				a{
+					font-size: 16px;
+					font-family: $title-font;
+					color: rgb( 33, 35, 34 );
+  					font-weight: bold;
+  					border: 3px solid rgb( 33, 32, 28);
+  					padding: 18px 23px;
+  					position: relative;
+  					text-transform: uppercase;
+  					-moz-transition: .5s ease-in-out;
+					-o-transition: .5s ease-in-out;
+					transition: .5s ease-in-out;
+
+			  		&::after{
+  						content: "";
+  						position: absolute;
+  						top:0;
+  						left: 0;
+  						right: 0;
+  						bottom: 0;
+  						border: 1px solid #000;
+  						margin: 2px;
+  					}
+
+  					&:hover{
+  						background: $white;
+  						color: $black;
+  					}
+
+				}
+
+			}
+		}
+	
+	}
+
+
+
+
+
+
+
+
